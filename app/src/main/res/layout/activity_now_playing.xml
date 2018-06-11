@@ -5,57 +5,39 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlack"
-    tools:context=".MainActivity">
+    android:background="@color/colorBlack">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/background_gradient"
-        android:drawable="@color/colorPrimary"
-        />
-
-    <TextView
-        android:id="@+id/songs"
+        android:id="@+id/playlist_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/CategoryStyle"
-        android:paddingVertical="@dimen/verticalPadding"
-        android:paddingTop="@dimen/verticalPadding"
-        android:paddingBottom="@dimen/verticalPadding"
-        android:text="@string/category_songs"/>
+        android:text="@string/category_playlist"
+        android:textColor="@color/colorLightGray"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/baseline_album_white_48"
+        android:padding="@dimen/verticalPadding"/>
 
     <TextView
-        android:id="@+id/playlist"
+        android:id="@+id/song_name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/CategoryStyle"
-        android:paddingVertical="@dimen/verticalPadding"
-        android:paddingTop="@dimen/verticalPadding"
-        android:paddingBottom="@dimen/verticalPadding"
-        android:text="@string/category_playlist"/>
-
+        android:text="@string/category_songs"
+        android:textColor="@color/colorLightGray"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"/>
     <TextView
-        android:id="@+id/artists"
+        android:id="@+id/artist_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/CategoryStyle"
-        android:paddingVertical="@dimen/verticalPadding"
-        android:paddingTop="@dimen/verticalPadding"
-        android:paddingBottom="@dimen/verticalPadding"
-        android:text="@string/category_artists"/>
-
-
-    <TextView
-        android:id="@+id/albums"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/CategoryStyle"
-        android:paddingVertical="@dimen/verticalPadding"
-        android:paddingTop="@dimen/verticalPadding"
-        android:paddingBottom="@dimen/verticalPadding"
-        android:text="@string/category_albums"/>
-
+        android:text="@string/category_artists"
+        android:textColor="@color/colorLightGray"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:background="@color/colorBlack"
-            android:src="@drawable/baseline_play_circle_outline_white_48"/>
+            android:src="@drawable/baseline_pause_circle_outline_white_48"/>
         <ImageButton
             android:id="@+id/next_image_button"
             android:layout_width="wrap_content"
@@ -86,5 +68,4 @@
 
             android:src="@drawable/baseline_skip_next_white_48"/>
     </LinearLayout>
-
 </LinearLayout>
