@@ -8,10 +8,10 @@
     android:background="@color/colorBlack">
 
     <TextView
-        android:id="@+id/playlist_text_view"
+        android:id="@+id/album_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/category_playlist"
+        android:text="@string/category_albums"
         android:textColor="@color/colorLightGray"
         android:gravity="center_horizontal"
         android:textSize="30sp"/>

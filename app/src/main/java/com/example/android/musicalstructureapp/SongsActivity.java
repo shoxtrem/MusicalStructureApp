@@ -4,9 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -17,7 +16,7 @@ public class SongsActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
 
-        ArrayList<Song> song = new ArrayList<>();
+        final ArrayList<Song> song = new ArrayList<>();
         song.add(new Song("Sorcererz","Sorcererz","Gorillaz"));
         song.add(new Song("Hail Mary","The Don Killuminati: The 7 Day Theory","2Pac"));
         song.add(new Song("DNA.","DAMN.","Kendrick Lamar"));
@@ -41,6 +40,21 @@ public class SongsActivity extends AppCompatActivity{
         listView.setAdapter(adapter);
 
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
+                Intent intent = new Intent(SongsActivity.this, NowPlayingActivity.class);
+                //Get the value of the item you clicked
+                Song itemClicked = song.get(position);
+                Bundle songData = new Bundle();
+                songData.putString("nowPlayingSongName", itemClicked.getmSongName());
+                songData.putString("nowPlayingSongArtist", itemClicked.getmArtistName());
+                songData.putString("nowPlayingSongAlbum", itemClicked.getmAlbumName());
+                intent.putExtras(songData);
+                startActivity(intent);
+
+            }
+        });
 
     }
 
