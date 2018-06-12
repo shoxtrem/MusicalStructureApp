@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/list"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" />
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/listTopActionBarPadding"
+        android:paddingEnd="@dimen/listTopActionBarPadding"
+        android:paddingLeft="@dimen/listTopActionBarPadding"
+        android:paddingStart="@dimen/listTopActionBarPadding"
+        android:paddingTop="@dimen/listTopActionBarPadding">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/colorBlack"
+            android:src="@drawable/baseline_arrow_back_ios_white_36" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:src="@drawable/baseline_view_list_white_36" />
+
+        <ImageButton
+            android:id="@+id/song_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:src="@drawable/baseline_audiotrack_white_36" />
+
+
+        <ImageButton
+            android:id="@+id/album_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:src="@drawable/baseline_album_white_36" />
+
+        <ImageButton
+            android:id="@+id/artist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:src="@drawable/baseline_recent_actors_white_36" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>
