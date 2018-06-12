@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="verticalPadding">20dp</dimen>
+    <dimen name="listPaddingLeft">16dp</dimen>
+    <dimen name="nowPlayingMarginHorizontal">16dp</dimen>
+    <dimen name="nowPlayingTextSize">30sp</dimen>
+    <dimen name="listItemSubValuesTextSize">12sp</dimen>
+    <dimen name="nowPlayingSubTextSize">20sp</dimen>
 </resources>

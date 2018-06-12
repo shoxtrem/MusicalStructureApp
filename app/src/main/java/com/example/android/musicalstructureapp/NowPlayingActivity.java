@@ -1,20 +1,24 @@
 package com.example.android.musicalstructureapp;
 
 import android.content.Intent;
+
 import java.lang.String;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class NowPlayingActivity extends AppCompatActivity{
+public class NowPlayingActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
+        // Get bundle from previous activity and check if it's not empty
+        // if so, get the data and write it on screen
         Bundle songData = getIntent().getExtras();
-        if (songData != null){
+        if (songData != null) {
 
             String songName = songData.getString("nowPlayingSongName");
             String songArtist = songData.getString("nowPlayingSongArtist");

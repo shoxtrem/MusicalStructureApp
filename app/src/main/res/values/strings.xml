@@ -4,4 +4,15 @@
     <string name="category_playlist">Playlist</string>
     <string name="category_artists">Artists</string>
     <string name="category_albums">Albums</string>
+    <string name="placeholder_description">Song placeholder cover art</string>
+    <string name="previous_image_button">Previous song</string>
+    <string name="play_image_button">Play/pause song</string>
+    <string name="next_image_button">Next song</string>
+    <string name="album_image_button">Album button</string>
+    <string name="song_image_button">Song button</string>
+    <string name="playlist_image_button">Playlist button</string>
+    <string name="artist_image_button">Artist button</string>
+    <string name="now_playing_default_song">Never Gonna Give You Up</string>
+    <string name="now_playing_default_artist">Rick Astley</string>
+    <string name="now_playing_default_album">Whenever You Need Somebody</string>
 </resources>

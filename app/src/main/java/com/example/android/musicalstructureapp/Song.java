@@ -9,18 +9,18 @@ public class Song {
 
     /**
      * Create a new Song object
-     * @param songName is name of the song
-     * @param albumName is the name of the album
+     *
+     * @param songName   is name of the song
+     * @param albumName  is the name of the album
      * @param artistName is the name of the artist
      */
-    public Song(String songName, String albumName, String artistName){
+    public Song(String songName, String albumName, String artistName) {
         mSongName = songName;
         mAlbumName = albumName;
         mArtistName = artistName;
     }
 
     /**
-     *
      * @return the name of the song
      */
     public String getmSongName() {
@@ -28,7 +28,6 @@ public class Song {
     }
 
     /**
-     *
      * @return the name of the album
      */
     public String getmAlbumName() {
@@ -36,7 +35,6 @@ public class Song {
     }
 
     /**
-     *
      * @return the name of the artist
      */
     public String getmArtistName() {

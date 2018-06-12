@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlack">
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/album_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/category_albums"
-        android:textColor="@color/colorLightGray"
         android:gravity="center_horizontal"
-        android:textSize="30sp"/>
+        android:layout_margin="16dp"
+        android:text="@string/now_playing_default_album"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/nowPlayingSubTextSize" />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/baseline_album_white_48"
-        android:padding="@dimen/verticalPadding"/>
+        android:layout_height="230dp"
+        android:contentDescription="@string/placeholder_description"
+        android:padding="@dimen/verticalPadding"
+        android:src="@drawable/baseline_album_white_48" />
 
     <TextView
         android:id="@+id/song_name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/category_songs"
-        android:textColor="@color/colorLightGray"
         android:gravity="center_horizontal"
-        android:textSize="30sp"/>
+        android:layout_marginStart="@dimen/nowPlayingMarginHorizontal"
+        android:layout_marginEnd="@dimen/nowPlayingMarginHorizontal"
+        android:layout_marginLeft="@dimen/nowPlayingMarginHorizontal"
+        android:layout_marginRight="@dimen/nowPlayingMarginHorizontal"
+        android:text="@string/now_playing_default_song"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/nowPlayingTextSize" />
+
     <TextView
         android:id="@+id/artist_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/category_artists"
-        android:textColor="@color/colorLightGray"
         android:gravity="center_horizontal"
-        android:textSize="20sp"/>
+        android:text="@string/now_playing_default_artist"
+        android:textColor="@color/colorLightGray"
+        android:layout_margin="@dimen/nowPlayingMarginHorizontal"
+        android:textSize="@dimen/nowPlayingSubTextSize" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,23 +55,27 @@
             android:id="@+id/previous_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorBlack"
             android:layout_weight="1"
-            android:src="@drawable/baseline_skip_previous_white_48"/>
+            android:background="@color/colorBlack"
+            android:contentDescription="@string/previous_image_button"
+            android:src="@drawable/baseline_skip_previous_white_48" />
+
         <ImageButton
             android:id="@+id/play_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:background="@color/colorBlack"
-            android:src="@drawable/baseline_pause_circle_outline_white_48"/>
+            android:contentDescription="@string/play_image_button"
+            android:src="@drawable/baseline_pause_circle_outline_white_48" />
+
         <ImageButton
             android:id="@+id/next_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorBlack"
             android:layout_weight="1"
-
-            android:src="@drawable/baseline_skip_next_white_48"/>
+            android:background="@color/colorBlack"
+            android:contentDescription="@string/next_image_button"
+            android:src="@drawable/baseline_skip_next_white_48" />
     </LinearLayout>
 </LinearLayout>

@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        // Find the view that shows the songs category
-        TextView songs = (TextView) findViewById(R.id.songs);
+        // Find the view that shows the songs category and add clickListener to it
+        TextView songs = (TextView) findViewById(R.id.song);
 
         songs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the view that shows the playlist category
+        // Find the view that shows the playlist category and add clickListener to it
         TextView playlist = (TextView) findViewById(R.id.playlist);
 
         playlist.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +39,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the view that shows the playlist category
+        // Find the view that shows the artist category and add clickListener to it
+        TextView artist = (TextView) findViewById(R.id.artist);
+
+        artist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ArtistActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        // Find the view that shows the album category and add clickListener to it
+        TextView album = (TextView) findViewById(R.id.album);
+
+        album.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AlbumActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        // Find the view that shows the play button and add clickListener to it
         ImageButton play = (ImageButton) findViewById(R.id.play_image_button);
 
         play.setOnClickListener(new View.OnClickListener() {

@@ -25,6 +25,12 @@
         <activity android:name=".NowPlayingActivity">
 
         </activity>
+        <activity android:name=".AlbumActivity">
+
+        </activity>
+        <activity android:name=".ArtistActivity">
+            
+        </activity>
     </application>
 
 </manifest>
