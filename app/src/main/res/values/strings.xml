@@ -15,4 +15,7 @@
     <string name="now_playing_default_song">Never Gonna Give You Up</string>
     <string name="now_playing_default_artist">Rick Astley</string>
     <string name="now_playing_default_album">Whenever You Need Somebody</string>
+    <string name="category_now_playing">Now Playing music</string>
+    <string name="back_image_button">go back button</string>
+    <string name="menu_image_button">go to main menu button</string>
 </resources>

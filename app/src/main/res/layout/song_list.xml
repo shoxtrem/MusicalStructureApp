@@ -9,11 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="@dimen/listTopActionBarPadding"
         android:paddingBottom="@dimen/listTopActionBarPadding"
+        android:paddingEnd="@dimen/listTopActionBarPadding"
         android:paddingLeft="@dimen/listTopActionBarPadding"
         android:paddingStart="@dimen/listTopActionBarPadding"
-        android:paddingEnd="@dimen/listTopActionBarPadding">
+        android:paddingTop="@dimen/listTopActionBarPadding">
 
         <ImageButton
             android:id="@+id/back_button"
@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:background="@color/colorBlack"
+            android:contentDescription="@string/back_image_button"
             android:src="@drawable/baseline_arrow_back_ios_white_36" />
 
         <ImageButton
@@ -29,7 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorBlack"
+            android:contentDescription="@string/menu_image_button"
             android:src="@drawable/baseline_view_list_white_36" />
+
 
         <ImageButton
             android:id="@+id/playlist_button"
@@ -37,6 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorBlack"
+            android:contentDescription="@string/play_image_button"
             android:src="@drawable/baseline_library_music_white_36" />
 
         <ImageButton
@@ -45,6 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorBlack"
+            android:contentDescription="@string/album_image_button"
             android:src="@drawable/baseline_album_white_36" />
 
         <ImageButton
@@ -53,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorBlack"
+            android:contentDescription="@string/artist_image_button"
             android:src="@drawable/baseline_recent_actors_white_36" />
     </LinearLayout>
 
